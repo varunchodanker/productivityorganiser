@@ -1,3 +1,13 @@
+# Todo
+
+- Find a suitable calendar library and integrate it
+- Make the navbar responsive
+- Implement a sidebar for a view of events
+- Create a suitable calendar view for mobile devices
+  - Adjust the sidebar to be responsive according to this
+
+# Running the project
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
