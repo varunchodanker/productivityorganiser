@@ -9,7 +9,7 @@ const NavBar = () => {
             <AppBar position='sticky' className = "navAppBar">
                     <Toolbar disableGutters className = "navToolBar">
                         <ScheduleIcon id = "navIcon" sx = {{position: "relative", left: "1.2vw", fontSize: "2.5em"}} />
-                        <Typography className = "navTitle" variant = 'h5' sx = {{mr: "auto", ml: "auto"}}
+                        <Typography className = "navTitle" variant = 'h5' sx = {{mr: "auto", ml: "3.6vw"}}
                         >
                             Productivity Organiser
                         </Typography>
