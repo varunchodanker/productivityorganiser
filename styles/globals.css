@@ -29,8 +29,15 @@
 
 .navTitle {
   /* text-align: center; */
-  position: relative;
+  margin-left: 0;
+  padding-left: 0;
+  position: absolute;
   /* left: calc(50vw - attr(width px)); */
   left: 50vw;
   transform: translateX(-50%);
+}
+
+#navIcon {
+  padding: 0;
+  margin: 0;
 }
