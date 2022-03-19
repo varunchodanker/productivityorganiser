@@ -5,7 +5,8 @@
 
 .accountButton {
   /* max-height: 35px; */
-  height: 2em;
+  height: 2.5em;
+  width: 5em;
   /* height: 0.000000000000001%; */
   /* transform: scaleY(0.9); */
   /* margin-top: 0.5%;
@@ -24,4 +25,12 @@
 .navToolBar {
   /* height:100%; */
   /* background-color: blue; */
+}
+
+.navTitle {
+  /* text-align: center; */
+  position: relative;
+  /* left: calc(50vw - attr(width px)); */
+  left: 50vw;
+  transform: translateX(-50%);
 }
