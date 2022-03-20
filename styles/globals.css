@@ -1,7 +1,9 @@
-/* html, body {
+html, body {
   height: 100%; 
   width: 100%;
-} */
+  margin: 0;
+  padding: 0;
+}
 
 .accountButton {
   /* max-height: 35px; */
@@ -24,4 +26,12 @@
 .navToolBar {
   /* height:100%; */
   /* background-color: blue; */
+}
+
+#contentArea {
+  margin: 2vh 1vw;
+  padding: 4vh 1vw;
+  background-color: blueviolet;
+  width: 96vw;
+  height: 400px;
 }
