@@ -33,5 +33,5 @@ html, body {
   padding: 4vh 1vw;
   background-color: blueviolet;
   width: 96vw;
-  height: 400px;
+  min-height: 400px;
 }
