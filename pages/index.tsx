@@ -77,7 +77,7 @@ const Home: NextPage = () => {
           </Box>
           <Box className = "halfMainArea">
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <Tabs value={chosenTab} onChange={handleTabChange} aria-label="basic tabs example">
+              <Tabs value={chosenTab} onChange={handleTabChange} aria-label="basic tabs example" variant="fullWidth">
                 <Tab label="Item One" {...a11yProps(0)} />
                 <Tab label="Item Two" {...a11yProps(1)} />
                 <Tab label="Item Three" {...a11yProps(2)} />
