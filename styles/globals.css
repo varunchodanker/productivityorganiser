@@ -34,4 +34,15 @@ html, body {
   background-color: blueviolet;
   width: 96vw;
   min-height: 400px;
+  display: flex;
+}
+
+.halfMainArea {
+  /* margin: 0.5vw; */
+  /* padding: 0.5vw; */
+  padding: 1vw;
+  width: 46vw;
+  background-color: red;
+  flex: 1; /* Ratio of widths of flex container children */
+  /* float: left; */
 }
