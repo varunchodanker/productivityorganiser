@@ -23,18 +23,22 @@ const Home: NextPage = () => {
       <NavBar></NavBar>
       <main>
         <Box id = "contentArea">
-          This is where the content will go.
-          <LocalizationProvider dateAdapter={AdapterDateFns}>
-            <StaticDatePicker<Date>
-              orientation="portrait"
-              openTo="day"
-              value={targetDate}
-              onChange={(newTargetDate) => {
-                setTargetDate(newTargetDate);
-              }}
-              renderInput={(params) => <TextField {...params} />}
-            />
-          </LocalizationProvider>
+          <Box className = "halfMainArea">
+            <LocalizationProvider dateAdapter={AdapterDateFns}>
+              <StaticDatePicker<Date>
+                orientation="portrait"
+                openTo="day"
+                value={targetDate}
+                onChange={(newTargetDate) => {
+                  setTargetDate(newTargetDate);
+                }}
+                renderInput={(params) => <TextField {...params} />}
+              />
+            </LocalizationProvider>
+          </Box>
+          <Box className = "halfMainArea">
+
+          </Box>
         </Box>
       </main>
 
