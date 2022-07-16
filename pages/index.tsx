@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import NavBar from '../components/NavBar'
-import { Box, Tab, Tabs, Typography } from '@mui/material'
+import { Box, Chip, Divider, Grid, Tab, Tabs, Typography } from '@mui/material'
 
 import TextField from '@mui/material/TextField';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
@@ -62,24 +62,76 @@ const Home: NextPage = () => {
       <NavBar></NavBar>
       <main>
         <Box id = "contentArea">
-          <Box className = "halfMainArea">
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
-              <StaticDatePicker<Date>
-                orientation="portrait"
-                openTo="day"
-                value={targetDate}
-                onChange={(newTargetDate) => {
-                  setTargetDate(newTargetDate);
-                }}
-                renderInput={(params) => <TextField {...params} />}
-              />
-            </LocalizationProvider>
+          <Box className = "halfMainArea" sx={{ maxHeight: '80vh', overflow: 'auto' }}>
+            <Box sx={{ display: 'grid', gridTemplateRows: 'auto', gap: 2 }}>
+              <Divider><Chip label="1 Jan" /></Divider>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <Divider><Chip label="2 Jan" /></Divider>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <Divider><Chip label="3 Jan" /></Divider>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <Divider><Chip label="4 Jan" /></Divider>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <Divider><Chip label="5 Jan" /></Divider>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <Divider><Chip label="6 Jan" /></Divider>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+              <div style = {{backgroundColor: 'green'}}>1 <br/> lol </div>
+            </Box>
           </Box>
           <Box className = "halfMainArea">
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-              <Tabs value={chosenTab} onChange={handleTabChange} aria-label="basic tabs example" variant="fullWidth">
+              <Tabs value={chosenTab} onChange={handleTabChange} aria-label="basic tabs example" variant="scrollable">
                 <Tab label="Item One" {...a11yProps(0)} />
                 <Tab label="Item Two" {...a11yProps(1)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Item Three" {...a11yProps(2)} />
                 <Tab label="Item Three" {...a11yProps(2)} />
               </Tabs>
             </Box>

@@ -46,3 +46,14 @@ html, body {
   flex: 1; /* Ratio of widths of flex container children */
   /* float: left; */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
