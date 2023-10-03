@@ -14,12 +14,12 @@ const NavBar = () => {
                             Productivity Organiser
                         </Typography>
                         <Button className = "accountButton" variant = "outlined" color = "inherit" sx = {{mr: '1.2vw', size: "small"}}>
-                            <Typography variant = 'h7'>
+                            <Typography variant = 'h6'>
                                 Login
                             </Typography>
                         </Button>
                         <Button className = "accountButton" variant = "outlined" color = "inherit" sx = {{mr: '1.2vw', size: "small"}}>
-                            <Typography variant = 'h7'>
+                            <Typography variant = 'h6'>
                                 Signup
                             </Typography>
                         </Button>
